@@ -4,8 +4,60 @@
 	<title>Buy now</title>
 	<style>body{margin: 0}
 	.header{background-color: black;color: red;text-align: center; font-weight: bold;}
-	.h1{background-color: black;color: red;text-align: center; font-weight: bold;}
-	.c {background-color: black;color: red;}
+	.h1{background-color: black;color: red;text-align: center; font-weight: bold; font-size: 40px}
+	.c {background-color: black;color: red; text-align: center;font-weight: bold;font-size: 20px}
+	.s1{text-align: center;size: 20px}
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #48d1cc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px
+    rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content
+a:hover{background-color:#f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 	</style>
 </head>
 <body>
@@ -14,6 +66,14 @@
 			<h1>Buy Now</h1>
 		</div>
 		<br>
+		<ul>
+
+<li><a href="candlehouse.html">Home</a></li>
+<li><a href="buy now.html">buy now</a></li>
+<li class="dropdown">
+
+  </li>
+</ul>
 <div class="h1">
 <Hi>DESIGNS</Hi>
 <br>
@@ -25,21 +85,23 @@
 <br>
 <div class="c">
 	<H1>CUSTOMIZE</H1>
-	<span>Container Shape</span><select id="Container" name="listing">
+	<span>Container Shape</span><div class="s1"><select id="Container" name="listing">
 		<option value="round">round</option>
 		<option value="square">square</option>
 		<option value="rectangle">rectangle</option>
 	    <option value="heart">heart</option>
 	</select>
+</div>
 	<br>
-	<span>Candle Size</span><select id="size" name="listing">
+	<span>Candle Size</span><div class="s11"><select id="size" name="listing">
 		<option value="small">small=100gm</option>
 		<option value="medium">medium=300gm</option>
 		<option value="large">large=400gm</option>
 	    <option value="extra large">extra large=500gm</option>
 	</select>
+</div>
 	<br>
-	<span>color</span><select id="color" name="listing">
+	<span>color</span><div class="s2"><select id="color" name="listing">
 		<option value="plain">plain</option>
 		<option value="red">red</option>
 		<option value="blue">blue</option>
@@ -53,18 +115,35 @@
 	    <option value="brown">brown</option>
 	    <option value="lime">lime</option>
 	</select>
+</div>
 	    <br>
-	    <span>fragrence</span><select id="fragrence" name="listing">
+	    <span>fragrance</span><div class="s3"><select id="fragrence" name="listing">
 	    	<option value="rose">rose</option>
 	    	<option value="lavender">lavender</option>
             <option value="lemon grass">chocolate</option>
-            <option value="mint">lavender</option>
+            <option value="mint">mint</option>
 	</select>
+</div>
 	<br>
-	<span>quantity</span><input type="number" name="jain 2" id jain 3>
+	<span>quantity</span><div class="s4"><input type="number" name="jain 2" id jain 3>
+	</div>
+	<br>
+	<span>pack</span><div class="s5"><select id="fragrence" name="listing">
+	    	<option value="pack of 1">pack of 1</option>
+	    	<option value="pack of 2">pack of 2</option>
+            <option value="pack of 3">pack of 3</option>
+            <option value="pack of 4">pack of 4</option>
+            <option value="pack of 5">pack of 5</option>
+            <option value="pack of 6">pack of 6</option>
+            <option value="pack of 7">pack of 7</option>
+            <option value="pack of 8">pack of 8</option>
+            <option value="pack of 9">pack of 9</option>
+            <option value="pack of 10">pack of 10</option>
+	</select>
+</div>
+</div>
 	<br>
 	<a href="cart.html" style="background-color: black color:red;">add to cart</a>
-</div>
 <div class="footer">
 		<marquee behaviour="alternate">
 			&copy;
